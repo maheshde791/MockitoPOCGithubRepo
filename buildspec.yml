@@ -4,12 +4,9 @@ phases:
   install:
     commands:
       - echo Entered the install phase...
-      - apt-get update -y
-     
   pre_build:
     commands:
       - echo Entered the pre_build phase...
-     
   build:
     commands:
       - echo Entered the build phase...
@@ -21,5 +18,5 @@ phases:
       - echo Build completed on `date`
 artifacts:
   files:
-    - target/MockitoPOC.war
-  discard-paths: yes
+    - target/*.*
+
